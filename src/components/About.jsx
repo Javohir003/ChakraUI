@@ -34,12 +34,7 @@ const About = () => {
         Your_Name: names,
         Your_Password: password,
       };
-      alert(JSON.stringify(DataForm, (key, value)=> {
-        if(key === 'Your_Password'){
-          return Number(value)
-        }
-        return value
-      }, 2))
+      alert(JSON.stringify(DataForm, null, 2))
       toastSucces("SuccesFull!");
     }
 
